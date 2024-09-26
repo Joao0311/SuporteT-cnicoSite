@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site - Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 style="color: #007BFF;">Contato</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html.html">Home</a></li>
+                <li><a href="Sobrenós.html">Sobre Nós</a></li>
+                <li><a href="ServiçosProdutos.html">Serviços</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="BlogNotícias.html">Blog</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2 style="text-align: center; font-size: 24px;">Fale Conosco</h2>
+        <form action="envio.html" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required style="border: 2px solid #007BFF; padding: 5px;"><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required style="border: 2px solid #007BFF; padding: 5px;"><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required style="border: 2px solid #007BFF; padding: 5px;"><br>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required style="width: 98,5%; height: 100px; border: 2px solid #000000;"></textarea><br>
+
+            <label for="motivo">Motivo do Contato:</label>
+            <select id="motivo" name="motivo">
+                <option value="duvida">Dúvida</option>
+                <option value="orcamento">Orçamento</option>
+                <option value="suporte">Suporte</option>
+            </select><br>
+
+            <label for="receber-noticias">Deseja receber nossas novidades?</label>
+            <input type="checkbox" id="receber-noticias" name="receber-noticias"><br>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar" style="background-color: #dc3545; color: white;">
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Suporte Técnico. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
